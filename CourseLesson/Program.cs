@@ -1,6 +1,14 @@
+using CourseLesson.Data;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("CourseDB");
+
+builder.Services.AddDbContext<Course>(option => option.UseSqlServer(connectionString));
+
+
 
 // Add services to the container.
 
