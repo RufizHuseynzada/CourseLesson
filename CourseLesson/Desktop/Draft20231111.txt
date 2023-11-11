@@ -10,3 +10,20 @@
 2023-11-11 14:46:26.386 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2023-11-11 14:47:45.497 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2023-11-11 14:49:52.021 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-11 17:06:14.541 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-11 17:31:37.785 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-11 17:31:37.817 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-11 17:31:37.822 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-11 17:31:37.823 +04:00 [INF] Hosting environment: Development
+2023-11-11 17:31:37.824 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-11 17:36:46.745 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-11 17:36:47.816 +04:00 [INF] HTTP POST /api/Countries responded 201 in 2076.8648 ms
+2023-11-11 17:37:15.240 +04:00 [INF] HTTP GET /api/Countries/2 responded 200 in 511.8224 ms
+2023-11-11 19:29:18.539 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-11 19:29:18.580 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-11 19:29:18.585 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-11 19:29:18.587 +04:00 [INF] Hosting environment: Development
+2023-11-11 19:29:18.588 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-11 19:29:48.265 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-11 19:29:49.312 +04:00 [INF] HTTP GET /api/Countries responded 200 in 2427.7878 ms
+2023-11-11 19:30:45.622 +04:00 [INF] HTTP GET /api/Countries/3 responded 200 in 506.4945 ms
