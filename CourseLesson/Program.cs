@@ -1,4 +1,7 @@
+using CourseLesson.Configurations;
+using CourseLesson.Contract;
 using CourseLesson.Data;
+using CourseLesson.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -23,6 +26,10 @@ builder.Services.AddCors( options =>
 });
 
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
+builder.Services.AddAutoMapper(typeof(MapperConfig));
+
+builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 
 
 var app = builder.Build();

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CourseLesson.Data;
+using CourseLesson.Models.Country;
+using AutoMapper;
+using CourseLesson.Contract;
 
 namespace CourseLesson.Controllers
 {
@@ -13,55 +16,61 @@ namespace CourseLesson.Controllers
     [ApiController]
     public class CountriesController : ControllerBase
     {
-        private readonly Course _context;
+        private readonly ICountryRepository _context;
+        private readonly IMapper _mapper;
 
-        public CountriesController(Course context)
+        public CountriesController(ICountryRepository context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Countries
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
+        public async Task<ActionResult<IEnumerable<GetCountriesMod>>> GetCountries()
         {
-            var countries = await _context.Countries.ToListAsync();
-            return Ok(countries);
+            var countries = await _context.GetAllAsync();
+
+            var getCountry = _mapper.Map<IList<GetCountriesMod>>(countries);
+
+            return Ok(getCountry);
         }
 
         // GET: api/Countries/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Country>> GetCountry(int id)
+        public async Task<ActionResult<GetCountryMod>> GetCountry(int id)
         {
-            var country = await _context.Countries.FindAsync(id);
+            var country = await _context.GetDetails(id);
 
             if (country == null)
             {
                 return NotFound();
             }
 
-            return country;
+            var countryGet = _mapper.Map<GetCountryMod>(country);
+
+            return countryGet;
         }
 
         // PUT: api/Countries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCountry(int id, Country country)
+        public async Task<IActionResult> PutCountry(int id, UpdateCountryMod countryUpdate)
         {
+            var country = await _context.GetAsync(id);
 
-            if (id != country.Id)
+            if (country == null)
             {
-                return BadRequest("Couldn'n find this Id");
+                return NotFound();
             }
-
-            _context.Entry(country).State = EntityState.Modified;
-
+            _mapper.Map(countryUpdate, country);
             try
             {
-                await _context.SaveChangesAsync();
+                await _context.UpdateAsync(country);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CountryExists(id))
+                if (!await _context.Exists(id))
                 {
                     return NotFound();
                 }
@@ -77,10 +86,10 @@ namespace CourseLesson.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(Country country)
+        public async Task<ActionResult<Country>> PostCountry(CreateCountryMod countryCreate)
         {
-            _context.Countries.Add(country);
-            await _context.SaveChangesAsync();
+            var country = _mapper.Map<Country>(countryCreate);
+            await _context.AddAsync(country);
 
             return CreatedAtAction("GetCountry", new { id = country.Id }, country);
         }
@@ -89,21 +98,17 @@ namespace CourseLesson.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
-            var country = await _context.Countries.FindAsync(id);
-            if (country == null)
+            if (await _context.Exists(id))
             {
                 return NotFound();
             }
-
-            _context.Countries.Remove(country);
-            await _context.SaveChangesAsync();
-
+            await _context.DeleteAsync(id);
             return NoContent();
         }
 
-        private bool CountryExists(int id)
-        {
-            return _context.Countries.Any(e => e.Id == id);
-        }
+        //private bool CountryExists(int id)
+        //{
+        //    return _context.Countries.Any(e => e.Id == id);
+        //}
     }
 }

@@ -1,0 +1,55 @@
+2023-11-12 13:55:09.518 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 13:55:09.563 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 13:55:09.569 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 13:55:09.571 +04:00 [INF] Hosting environment: Development
+2023-11-12 13:55:09.572 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 14:06:14.752 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 14:06:17.981 +04:00 [INF] HTTP POST /api/Countries responded 201 in 4557.6880 ms
+2023-11-12 14:07:41.357 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 14:07:41.397 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 14:07:41.403 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 14:07:41.406 +04:00 [INF] Hosting environment: Development
+2023-11-12 14:07:41.407 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 14:14:29.429 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 14:14:31.131 +04:00 [INF] HTTP POST /api/Countries responded 201 in 2563.2515 ms
+2023-11-12 14:14:46.737 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 14:14:46.780 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 14:14:46.785 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 14:14:46.787 +04:00 [INF] Hosting environment: Development
+2023-11-12 14:14:46.789 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 14:15:13.528 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 14:15:14.335 +04:00 [INF] HTTP POST /api/Countries responded 201 in 1694.9085 ms
+2023-11-12 14:15:31.986 +04:00 [INF] HTTP POST /api/Countries responded 201 in 59.7101 ms
+2023-11-12 14:16:44.763 +04:00 [INF] HTTP POST /api/Countries responded 415 in 369.6934 ms
+2023-11-12 14:18:51.780 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 14:18:51.821 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 14:18:51.828 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 14:18:51.830 +04:00 [INF] Hosting environment: Development
+2023-11-12 14:18:51.831 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 14:19:06.857 +04:00 [INF] HTTP POST /api/Countries responded 400 in 327.4134 ms
+2023-11-12 14:43:54.002 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 14:43:54.040 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 14:43:54.046 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 14:43:54.049 +04:00 [INF] Hosting environment: Development
+2023-11-12 14:43:54.050 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 23:35:13.541 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 23:35:13.574 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 23:35:13.578 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 23:35:13.580 +04:00 [INF] Hosting environment: Development
+2023-11-12 23:35:13.581 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 23:35:35.103 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 23:35:37.744 +04:00 [INF] HTTP GET /api/Countries responded 200 in 3964.0145 ms
+2023-11-12 23:35:57.672 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 23:35:57.706 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 23:35:57.712 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 23:35:57.714 +04:00 [INF] Hosting environment: Development
+2023-11-12 23:35:57.715 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 23:36:45.738 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 23:36:46.447 +04:00 [INF] HTTP GET /api/Countries responded 200 in 1453.0531 ms
+2023-11-12 23:43:43.824 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-12 23:43:43.858 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-12 23:43:43.864 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-12 23:43:43.866 +04:00 [INF] Hosting environment: Development
+2023-11-12 23:43:43.868 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-12 23:43:55.425 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-12 23:43:57.222 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 2752.4205 ms

@@ -1,0 +1,205 @@
+2023-11-14 19:25:45.472 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:25:45.519 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:25:45.527 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:25:45.529 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:25:45.531 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:28:22.767 +04:00 [ERR] HTTP GET /api/Countries responded 500 in 40.7407 ms
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-11-14 19:28:22.794 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-14 19:31:38.491 +04:00 [ERR] HTTP GET /api/Countries responded 500 in 0.7773 ms
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-11-14 19:31:38.507 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-14 19:32:22.777 +04:00 [ERR] HTTP POST /api/Countries responded 500 in 24.1097 ms
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method17(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-11-14 19:32:22.790 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CourseLesson.Contract.ICountryRepository' while attempting to activate 'CourseLesson.Controllers.CountriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method17(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-14 19:34:51.052 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:34:51.089 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:34:51.094 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:34:51.097 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:34:51.097 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:37:21.738 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:37:21.779 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:37:21.786 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:37:21.788 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:37:21.789 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:38:55.201 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-14 19:38:58.236 +04:00 [INF] HTTP GET /api/Countries responded 200 in 4603.0014 ms
+2023-11-14 19:39:23.726 +04:00 [INF] HTTP POST /api/Countries responded 201 in 832.3916 ms
+2023-11-14 19:39:58.229 +04:00 [INF] HTTP PUT /api/Countries/8 responded 204 in 178.9941 ms
+2023-11-14 19:40:21.765 +04:00 [INF] HTTP GET /api/Countries responded 200 in 3.7325 ms
+2023-11-14 19:41:34.448 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:41:34.520 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:41:34.534 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:41:34.536 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:41:34.539 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:42:30.039 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-14 19:42:31.237 +04:00 [INF] HTTP PUT /api/Countries/9 responded 204 in 2289.2359 ms
+2023-11-14 19:42:39.200 +04:00 [INF] HTTP GET /api/Countries responded 200 in 119.9722 ms
+2023-11-14 19:43:18.091 +04:00 [INF] HTTP DELETE /api/Countries/8 responded 404 in 378.9169 ms
+2023-11-14 19:43:54.754 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:43:54.821 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:43:54.827 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:43:54.829 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:43:54.830 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:46:40.058 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-14 19:46:40.838 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourseLesson.Data.Course'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-11-14 19:46:40.859 +04:00 [ERR] HTTP DELETE /api/Countries/8 responded 500 in 1922.2681 ms
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at CourseLesson.Repository.GenericRepository`1.GetAsync(Nullable`1 id) in D:\project\Course.API\CourseLesson\CourseLesson\Repository\GenericRepository.cs:line 51
+   at CourseLesson.Repository.GenericRepository`1.DeleteAsync(Int32 id) in D:\project\Course.API\CourseLesson\CourseLesson\Repository\GenericRepository.cs:line 27
+   at CourseLesson.Controllers.CountriesController.DeleteCountry(Int32 id) in D:\project\Course.API\CourseLesson\CourseLesson\Controllers\CountriesController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-11-14 19:46:40.912 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at CourseLesson.Repository.GenericRepository`1.GetAsync(Nullable`1 id) in D:\project\Course.API\CourseLesson\CourseLesson\Repository\GenericRepository.cs:line 51
+   at CourseLesson.Repository.GenericRepository`1.DeleteAsync(Int32 id) in D:\project\Course.API\CourseLesson\CourseLesson\Repository\GenericRepository.cs:line 27
+   at CourseLesson.Controllers.CountriesController.DeleteCountry(Int32 id) in D:\project\Course.API\CourseLesson\CourseLesson\Controllers\CountriesController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-14 19:46:40.942 +04:00 [ERR] An error occurred using the connection to database 'Course' on server '(localdb)\mssqllocaldb'.
+2023-11-14 19:50:25.047 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 19:50:25.090 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 19:50:25.097 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 19:50:25.099 +04:00 [INF] Hosting environment: Development
+2023-11-14 19:50:25.100 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 19:54:01.898 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-14 19:54:02.969 +04:00 [INF] HTTP DELETE /api/Countries/8 responded 204 in 2085.2297 ms
+2023-11-14 19:54:10.671 +04:00 [INF] HTTP GET /api/Countries responded 200 in 108.7965 ms
+2023-11-14 19:55:22.067 +04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 36.6544 ms
+2023-11-14 20:15:09.656 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-14 20:15:09.697 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-14 20:15:09.704 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-14 20:15:09.707 +04:00 [INF] Hosting environment: Development
+2023-11-14 20:15:09.708 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-14 20:15:25.300 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-14 20:15:27.490 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 3147.0292 ms
