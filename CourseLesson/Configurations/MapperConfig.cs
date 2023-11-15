@@ -15,7 +15,9 @@ namespace CourseLesson.Configurations
             CreateMap<Country, GetCountryMod>().ReverseMap();
             CreateMap<Country, UpdateCountryMod>().ReverseMap();
             CreateMap<Library, GetLibrariesMod>().ReverseMap();
-
+            CreateMap<Library, CreateLibraryMod>().ReverseMap();
+            CreateMap<Library, GetLibraryMod>().ReverseMap();
+            CreateMap<Library, UpdateLibraryMod>().ReverseMap();            
         }
     }
 }
