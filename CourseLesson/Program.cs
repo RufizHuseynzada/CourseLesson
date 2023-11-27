@@ -2,8 +2,13 @@ using CourseLesson.Configurations;
 using CourseLesson.Contract;
 using CourseLesson.Data;
 using CourseLesson.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Data.Common;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,10 +33,34 @@ builder.Services.AddCors( options =>
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 
+builder.Services.AddIdentityCore<ApiUser>().AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<Course>()
+    .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("CourseLessonApi")
+    .AddDefaultTokenProviders();
+
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<ILibraryRepository, LibraryRepository>();
+builder.Services.AddScoped<IAuthManager, AuthManager>();
 
+builder.Services.AddAuthentication(option =>
+{
+    option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(optons =>
+{
+    optons.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero,
+        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]))
+    };
+});
 
 var app = builder.Build();
 
@@ -47,6 +76,8 @@ app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseAuthentication();
 
 app.MapControllers();
 

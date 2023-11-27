@@ -4,6 +4,7 @@ using CourseLesson.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CourseLesson.Migrations
 {
     [DbContext(typeof(Course))]
-    partial class CourseModelSnapshot : ModelSnapshot
+    [Migration("20231116150627_RoleUserTables")]
+    partial class RoleUserTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -203,24 +206,17 @@ namespace CourseLesson.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6a716d3d-1cc4-41ec-a332-0470bc2684fc",
-                            ConcurrencyStamp = "95bc8623-cff5-4d83-b514-b9af0fcdcee1",
+                            Id = "e570151e-1769-4653-990a-72f1ae20fbc1",
+                            ConcurrencyStamp = "30acb34d-060b-412d-a57e-0e83f9adf850",
                             Name = "Underwriting",
                             NormalizedName = "UNDERWRITING"
                         },
                         new
                         {
-                            Id = "9f8301ef-4007-4309-a9ae-1f8355c9eeb0",
-                            ConcurrencyStamp = "46d10ceb-9b85-4659-a29f-375f29aeda5f",
+                            Id = "964a8ccb-b8fd-4f76-89c5-0b2dcb57f0ff",
+                            ConcurrencyStamp = "3f8c24ae-6a4c-4e4d-be81-b3c2ff1bcf74",
                             Name = "Seller",
                             NormalizedName = "SELLER"
-                        },
-                        new
-                        {
-                            Id = "34f6f126-4e69-49a9-abf5-f9a7c6a94fc0",
-                            ConcurrencyStamp = "f191eb6c-80db-45e9-b1c7-c1dfd5ab8a48",
-                            Name = "User",
-                            NormalizedName = "USER"
                         });
                 });
 

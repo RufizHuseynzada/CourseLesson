@@ -3,6 +3,7 @@ using AutoMapper;
 using CourseLesson.Data;
 using CourseLesson.Models.Country;
 using CourseLesson.Models.Library;
+using CourseLesson.Models.Users;
 
 namespace CourseLesson.Configurations
 {
@@ -17,7 +18,10 @@ namespace CourseLesson.Configurations
             CreateMap<Library, GetLibrariesMod>().ReverseMap();
             CreateMap<Library, CreateLibraryMod>().ReverseMap();
             CreateMap<Library, GetLibraryMod>().ReverseMap();
-            CreateMap<Library, UpdateLibraryMod>().ReverseMap();            
+            CreateMap<Library, UpdateLibraryMod>().ReverseMap();
+            CreateMap<ApiUser, CreateUserMod>().ReverseMap();
+            CreateMap<ApiUser, LogInMod>().ReverseMap();
+
         }
     }
 }

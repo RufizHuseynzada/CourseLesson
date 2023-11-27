@@ -9,6 +9,7 @@ using CourseLesson.Data;
 using CourseLesson.Models.Country;
 using AutoMapper;
 using CourseLesson.Contract;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CourseLesson.Controllers
 {
@@ -55,6 +56,7 @@ namespace CourseLesson.Controllers
         // PUT: api/Countries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "Underwriting,Seller")]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryMod countryUpdate)
         {
             var country = await _context.GetAsync(id);
@@ -86,6 +88,7 @@ namespace CourseLesson.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryMod countryCreate)
         {
             var country = _mapper.Map<Country>(countryCreate);
@@ -96,6 +99,7 @@ namespace CourseLesson.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteCountry(int id)
         {
             if (await _context.Exists(id))

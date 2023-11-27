@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CourseLesson.Data.Configurations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 
 namespace CourseLesson.Data
 {
-    public class Course : DbContext
+    public class Course : IdentityDbContext<ApiUser>
     {
         public Course(DbContextOptions options) : base(options)
         {
@@ -16,6 +18,8 @@ namespace CourseLesson.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+
             modelBuilder.Entity<Country>().HasData(
                 new Country
                 {

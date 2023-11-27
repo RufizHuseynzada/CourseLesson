@@ -1,0 +1,91 @@
+2023-11-27 12:55:43.964 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 12:55:44.006 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 12:55:44.010 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 12:55:44.011 +04:00 [INF] Hosting environment: Development
+2023-11-27 12:55:44.012 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:19:02.051 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:19:02.117 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:19:02.122 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:19:02.123 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:19:02.124 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:19:03.496 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User/login" for actions - CourseLesson.Controllers.UserController.LogIn (CourseLesson),CourseLesson.Controllers.UserController.LogIn (CourseLesson). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-27 14:19:45.411 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User/login" for actions - CourseLesson.Controllers.UserController.LogIn (CourseLesson),CourseLesson.Controllers.UserController.LogIn (CourseLesson). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-27 14:20:09.249 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:20:09.286 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:20:09.291 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:20:09.292 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:20:09.293 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:20:10.254 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User/login" for actions - CourseLesson.Controllers.UserController.LogIn (CourseLesson),CourseLesson.Controllers.UserController.LogIn (CourseLesson). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-27 14:24:53.477 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:24:53.513 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:24:53.517 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:24:53.519 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:24:53.519 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:24:54.429 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User/login" for actions - CourseLesson.Controllers.UserController.LogIn (CourseLesson),CourseLesson.Controllers.UserController.RefreshToken (CourseLesson). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-11-27 14:25:14.603 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:25:14.640 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:25:14.645 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:25:14.646 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:25:14.647 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:35:09.859 +04:00 [INF] HTTP POST /api/User/register responded 401 in 555.4029 ms
+2023-11-27 14:35:35.283 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.4277 ms
+2023-11-27 14:36:32.956 +04:00 [INF] HTTP POST /api/User/register responded 401 in 1.8128 ms
+2023-11-27 14:36:34.186 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1006 ms
+2023-11-27 14:36:50.717 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.0890 ms
+2023-11-27 14:37:16.831 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1448 ms
+2023-11-27 14:37:17.706 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.2477 ms
+2023-11-27 14:37:20.868 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.0886 ms
+2023-11-27 14:37:21.610 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1251 ms
+2023-11-27 14:37:26.897 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1022 ms
+2023-11-27 14:37:37.122 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1976 ms
+2023-11-27 14:39:18.543 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1290 ms
+2023-11-27 14:39:32.120 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:39:32.155 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:39:32.160 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:39:32.161 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:39:32.162 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:40:33.690 +04:00 [INF] HTTP POST /api/User/register responded 401 in 38.4857 ms
+2023-11-27 14:41:40.637 +04:00 [INF] HTTP POST /api/User/login responded 401 in 0.5848 ms
+2023-11-27 14:42:22.793 +04:00 [WRN] No store type was specified for the decimal property 'Rating' on entity type 'Library'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-27 14:42:25.792 +04:00 [INF] HTTP POST /api/Libraries responded 201 in 4533.1260 ms
+2023-11-27 14:42:45.412 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.5650 ms
+2023-11-27 14:44:22.260 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.0983 ms
+2023-11-27 14:45:07.089 +04:00 [INF] Now listening on: https://localhost:7263
+2023-11-27 14:45:07.121 +04:00 [INF] Now listening on: http://localhost:5263
+2023-11-27 14:45:07.125 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-27 14:45:07.126 +04:00 [INF] Hosting environment: Development
+2023-11-27 14:45:07.127 +04:00 [INF] Content root path: D:\project\Course.API\CourseLesson\CourseLesson\
+2023-11-27 14:45:38.583 +04:00 [INF] HTTP POST /api/User/register responded 401 in 30.3068 ms
+2023-11-27 14:47:44.943 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.6252 ms
+2023-11-27 14:48:25.466 +04:00 [INF] HTTP POST /api/User/register responded 401 in 2.1455 ms
+2023-11-27 14:48:38.831 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1401 ms
+2023-11-27 14:48:51.485 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1062 ms
+2023-11-27 14:49:41.863 +04:00 [INF] HTTP POST /api/User/register responded 401 in 0.1140 ms
